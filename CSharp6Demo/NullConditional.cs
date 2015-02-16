@@ -5,7 +5,6 @@ namespace ConsoleApplication1
 {
     internal static class NullConditional
     {
-
         public static void PAIN(Track track)
         {
             if (track == null || track.Band == null || track.Band.FrontMan == null || string.IsNullOrWhiteSpace(track.Band.FrontMan.Name))
@@ -15,38 +14,33 @@ namespace ConsoleApplication1
 
             Console.WriteLine(track.Band.FrontMan.Name);
         }
-
-        public static void YAY(Track track)
-        {
-            if (string.IsNullOrWhiteSpace(track?.Band?.FrontMan?.Name))
-            {
-                return;
-            }
-
-            Console.WriteLine(track.Band.FrontMan.Name);
-        }
-
-
-
-        //public event PropertyChangedEventHandler PropertyChanged;
-        //public void YAYXAML(string propertyName)
-        //{
-        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName);
-        //}
     }
 
-    class Track
+    internal class NullConditionalEvent : INotifyPropertyChanged
     {
-        public Band Band { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void RaisePain(string propertyName)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
 
-    class Band
+    internal class Band
     {
         public Member FrontMan { get; set; }
     }
 
-    class Member
+    internal class Member
     {
         public string Name { get; set; }
+    }
+
+    internal class Track
+    {
+        public Band Band { get; set; }
     }
 }

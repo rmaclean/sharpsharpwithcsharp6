@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConsoleApplication1
+﻿namespace ConsoleApplication1
 {
     internal class AutoProperties
     {
@@ -21,23 +19,7 @@ namespace ConsoleApplication1
             get { return csharpOneTwo; }
             set { csharpOneTwo = value; }
         }
-        #endregion
 
-        #region version2
-        public int CSharpSomethingOld { get; set; }
-
-        public int CSharpSomethingOldTwo { get; private set; }
-
-        public AutoProperties()
-        {
-            CSharpSomethingOld = 42;
-        }
-        #endregion
-
-        #region version6
-        public int CSharpSixOne { get; set; } = 42;
-
-        public int CSharpSixTwo { get; } = 42;
-        #endregion
+        #endregion version1
     }
 }

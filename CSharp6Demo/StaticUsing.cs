@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using static System.Console;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
@@ -17,7 +17,7 @@ namespace ConsoleApplication1
 
             foreach (var item in config)
             {
-                WriteLine("{0} = {1}", item.Key, item.Value);
+                Console.WriteLine("{0} = {1}", item.Key, item.Value);
             }
         }
     }

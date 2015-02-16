@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -8,14 +7,13 @@ namespace ConsoleApplication1
 {
     internal class AsyncExceptions
     {
-
         public static async Task Logger(string message)
         {
             var fileStream = new FileStream("log.txt", FileMode.OpenOrCreate, FileAccess.Write);
             fileStream.Position = fileStream.Length;
             using (var writer = new StreamWriter(fileStream))
             {
-               await writer.WriteLineAsync(message);
+                await writer.WriteLineAsync(message);
             }
         }
 
@@ -36,19 +34,6 @@ namespace ConsoleApplication1
             {
                 await Logger("OMG");
             }
-        }
-
-        public static async Task Yay()
-        {
-            var client = new HttpClient();
-            try
-            {
-                var result = await client.GetStringAsync("http://www.sadev.co.za");
-            }
-            catch (Exception)
-            {
-                await Logger("OMG");
-            }          
         }
     }
 }

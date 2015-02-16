@@ -6,9 +6,12 @@
 
         public string Name { get; set; }
 
-        public string Old()
+        public string Old
         {
-            return string.Format("{0} is {1} years old", Name, Age);
+            get
+            {
+                return string.Format("{0} is {1} years old", Name, Age);
+            }
         }
     }
 }

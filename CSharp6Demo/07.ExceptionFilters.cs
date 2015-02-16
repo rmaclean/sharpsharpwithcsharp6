@@ -22,6 +22,27 @@ namespace ConsoleApplication1
                 }
             }
         }
+
+        public static void OldPain2()
+        {
+            var loggingTurnedOn = false;
+            try
+            {
+                throw new MyException { Id = 200 };
+            }
+            catch (MyException ex)
+            {
+                if (!loggingTurnedOn)
+                {
+                    throw;
+                }
+                else
+                {
+                    // log and continue
+                }
+            }
+        }
+
     }
 
     [Serializable]

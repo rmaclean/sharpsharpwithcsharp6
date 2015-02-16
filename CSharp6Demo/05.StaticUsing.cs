@@ -1,24 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace ConsoleApplication1
 {
     internal class StaticUsing
     {
-        private static void CSIX()
+        private static void Pain()
         {
-            var config = new Dictionary<string, string>
-            {
-                ["FIRST"] = "hi",
-                ["SECOND"] = "how are you",
-                ["THIRD"] = "i am fine",
-                ["FORTH"] = "good bye",
-            };
-
-            foreach (var item in config)
-            {
-                Console.WriteLine("{0} = {1}", item.Key, item.Value);
-            }
+            Console.WriteLine(Math.Cos(5) * Math.Tan(20) + Math.PI);
         }
     }
 }

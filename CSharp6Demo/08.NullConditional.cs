@@ -7,12 +7,10 @@ namespace ConsoleApplication1
     {
         public static void PAIN(Track track)
         {
-            if (track == null || track.Band == null || track.Band.FrontMan == null || string.IsNullOrWhiteSpace(track.Band.FrontMan.Name))
+            if (track != null && track.Band != null && track.Band.FrontMan != null && track.Band.FrontMan.Name == "Munya")
             {
-                return;
+                Console.WriteLine("HI! " + track.Band.FrontMan.Name);
             }
-
-            Console.WriteLine(track.Band.FrontMan.Name);
         }
     }
 

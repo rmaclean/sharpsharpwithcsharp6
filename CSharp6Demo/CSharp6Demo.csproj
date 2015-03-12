@@ -47,16 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="06.AsyncExceptions.cs" />
-    <Compile Include="04.AutoProperties.cs" />
-    <Compile Include="07.ExceptionFilters.cs" />
-    <Compile Include="03.IndexedMembers.cs" />
-    <Compile Include="09.NameOf.cs" />
-    <Compile Include="08.NullConditional.cs" />
-    <Compile Include="10.ExpressionBodiesAndNewStringStuff.cs" />
+    <Compile Include="03.AsyncExceptions.cs" />
+    <Compile Include="05.AutoProperties.cs" />
+    <Compile Include="04.ExceptionFilters.cs" />
+    <Compile Include="01.IndexedMembers.cs" />
+    <Compile Include="06.NameOf.cs" />
+    <Compile Include="07.NullConditional.cs" />
+    <Compile Include="08.ExpressionBodiedMembers.cs" />
+    <Compile Include="09.StringInterpolation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="05.StaticUsing.cs" />
+    <Compile Include="02.StaticUsing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

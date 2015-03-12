@@ -3,15 +3,27 @@ using System.ComponentModel;
 
 namespace ConsoleApplication1
 {
-    internal static class NullConditional
+    internal static class NullPropagation
     {
-        public static void PAIN(Track track)
+        public static void Exception(Track track)
+        {
+            Console.WriteLine("HI! " + track.Band.FrontMan.Name);
+        }
+
+        public static void Exception2(Track track)
+        {
+            var name = string.IsNullOrWhiteSpace(track.Band.FrontMan.Name) ? "Unknown" : track.Band.FrontMan.Name;
+            Console.WriteLine("HI! " + name);
+        }
+
+        public static void AllTheCeremony(Track track)
         {
             if (track != null && track.Band != null && track.Band.FrontMan != null && track.Band.FrontMan.Name == "Munya")
             {
                 Console.WriteLine("HI! " + track.Band.FrontMan.Name);
             }
         }
+
     }
 
     internal class NullConditionalEvent : INotifyPropertyChanged

@@ -52,7 +52,7 @@
     <Compile Include="04.ExceptionFilters.cs" />
     <Compile Include="01.IndexedMembers.cs" />
     <Compile Include="06.NameOf.cs" />
-    <Compile Include="07.NullConditional.cs" />
+    <Compile Include="07.NullPropagation.cs" />
     <Compile Include="08.ExpressionBodiedMembers.cs" />
     <Compile Include="09.StringInterpolation.cs" />
     <Compile Include="Program.cs" />

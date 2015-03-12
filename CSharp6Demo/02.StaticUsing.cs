@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace ConsoleApplication1
+﻿namespace ConsoleApplication1
 {
+    using System;
+
     internal class StaticUsing
     {
-        private static void Pain()
+        private void BrokenFlow()
         {
             Console.WriteLine(Math.Cos(5) * Math.Tan(20) + Math.PI);
         }

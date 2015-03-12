@@ -1,4 +1,6 @@
-﻿namespace ConsoleApplication1
+﻿using System.ComponentModel;
+
+namespace ConsoleApplication1
 {
     internal class ExpressionBodiedMembers
     {
@@ -16,6 +18,16 @@
             {
                 return CostPrice * Tax();
             }
+        }
+    }
+
+    internal class ExpressionBodiedMethod : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void RaisePain(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

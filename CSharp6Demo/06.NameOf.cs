@@ -23,6 +23,11 @@ namespace ConsoleApplication1
 
         private void RaisePropertyChanged(string propertyChanged)
         {
+            if (propertyChanged == null)
+            {
+                throw new ArgumentNullException("propertyChanged");
+            }
+
             // do stuff
         }
     }

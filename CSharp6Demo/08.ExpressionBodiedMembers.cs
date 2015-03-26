@@ -8,7 +8,6 @@ namespace ConsoleApplication1
 
         private double Tax()
         {
-            // amazing DB code
             return 1.14;
         }
 

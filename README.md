@@ -2,8 +2,8 @@
 
 This is the base demo code I used in my talks about what is new in C# 6. The demo covers:
 - [Index Initialisers](http://www.sadev.co.za/content/index-initialisers-c-6)
-- Auto-properties with initializers 
-- Read-only auto-properties
+- [Auto-properties with initializers](http://www.sadev.co.za/content/auto-properties-initializers-c-6)
+- [Read-only auto-properties](http://www.sadev.co.za/content/read-only-auto-properties-c-6)
 - Static Using Statements
 - [Await in catch blocks](http://www.sadev.co.za/content/exceptions-what-happens-when-exception-occurs-inside-catch-or-inside-when-c-6-how-smart)
 - Exception Filtering

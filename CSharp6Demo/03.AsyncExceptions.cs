@@ -20,17 +20,11 @@ namespace ConsoleApplication1
         public static async Task OldPain()
         {
             var client = new HttpClient();
-            var success = true;
             try
             {
                 var result = await client.GetStringAsync("http://www.sadev.co.za");
             }
             catch (Exception)
-            {
-                success = false;
-            }
-
-            if (!success)
             {
                 await Logger("OMG");
             }

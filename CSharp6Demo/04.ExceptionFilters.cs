@@ -11,15 +11,9 @@ namespace ConsoleApplication1
                 throw new MyException { Id = 200 };
             }
             catch (MyException ex)
+                when (ex.Id == 200)
             {
-                if (ex.Id == 200)
-                {
-                    // do something
-                }
-                else
-                {
-                    throw;
-                }
+                // do something
             }
         }
 
@@ -31,15 +25,9 @@ namespace ConsoleApplication1
                 throw new MyException { Id = 200 };
             }
             catch (MyException ex)
+                when (loggingTurnedOn)
             {
-                if (!loggingTurnedOn)
-                {
-                    throw;
-                }
-                else
-                {
-                    // log and continue
-                }
+                // log and continue             
             }
         }
 

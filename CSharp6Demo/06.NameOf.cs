@@ -12,20 +12,20 @@ namespace ConsoleApplication1
             set
             {
                 age = value;
-                RaisePropertyChanged("Age");
+                RaisePropertyChanged(nameof(Age));
             }
         }
 
         public static void OldPain()
         {
-            var type = Type.GetType("Track");
+            var type = Type.GetType(nameof(Track));
         }
 
         private void RaisePropertyChanged(string propertyChanged)
         {
             if (propertyChanged == null)
             {
-                throw new ArgumentNullException("propertyChanged");
+                throw new ArgumentNullException(nameof(propertyChanged));
             }
 
             // do stuff

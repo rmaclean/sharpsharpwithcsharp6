@@ -32,6 +32,22 @@ namespace ConsoleApplication1
             {
                 Console.WriteLine("{0} = {1}", item.Key, item.Value);
             }
-        }        
+        }
+
+        public static void C_Sharp_Six_Dictionary()
+        {
+            var config = new Dictionary<int, string>
+            {
+                [1] = "hi",
+                [2] = "how are you",
+                [3] = "i am fine",
+                [4] = "good bye",
+            };
+
+            foreach (var item in config)
+            {
+                Console.WriteLine("{0} = {1}", item.Key, item.Value);
+            }
+        }
     }
 }

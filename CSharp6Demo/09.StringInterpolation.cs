@@ -23,7 +23,7 @@
         {
             get
             {
-                return string.Format("{0} is {1} years old and their favourite animal is {2}", Name, Age, AnimalsOrderedByFavourite().First());
+                return $"{Name} is {Age} years old and their favourite animal is {AnimalsOrderedByFavourite().First()}";
             }
         }
 
@@ -31,7 +31,7 @@
         {
             get
             {
-                return string.Format("Hamsters cost {0:0.00}", 14.22);
+                return $"Hamsters cost {14.22:0.00}";
             }
         }
     }

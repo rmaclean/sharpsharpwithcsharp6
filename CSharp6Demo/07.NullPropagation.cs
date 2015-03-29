@@ -7,18 +7,18 @@ namespace ConsoleApplication1
     {
         public static void Exception(Track track)
         {
-            Console.WriteLine("HI! " + track.Band.FrontMan.Name);
+            Console.WriteLine("HI! " + track?.Band?.FrontMan?.Name);
         }
 
         public static void Exception2(Track track)
         {
-            var name = string.IsNullOrWhiteSpace(track.Band.FrontMan.Name) ? "Unknown" : track.Band.FrontMan.Name;
+            var name = string.IsNullOrWhiteSpace(track?.Band?.FrontMan?.Name) ? "Unknown" : track.Band.FrontMan.Name;
             Console.WriteLine("HI! " + name);
         }
 
         public static void AllTheCeremony(Track track)
         {
-            if (track != null && track.Band != null && track.Band.FrontMan != null && track.Band.FrontMan.Name == "Munya")
+            if (track?.Band?.FrontMan?.Name == "Munya")
             {
                 Console.WriteLine("HI! " + track.Band.FrontMan.Name);
             }
@@ -32,10 +32,7 @@ namespace ConsoleApplication1
 
         private void RaisePain(string propertyName)
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 

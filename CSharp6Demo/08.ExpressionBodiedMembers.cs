@@ -6,27 +6,15 @@ namespace ConsoleApplication1
     {
         public double CostPrice { get; set; }
 
-        private double Tax()
-        {
-            return 1.14;
-        }
+        private double Tax() => 1.14;
 
-        public double Price
-        {
-            get
-            {
-                return CostPrice * Tax();
-            }
-        }
+        public double Price => CostPrice * Tax();
     }
 
     internal class ExpressionBodiedMethod : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void RaisePain(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        private void RaisePain(string propertyName) =>  PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }

@@ -1,12 +1,13 @@
 # Sharp Sharp with C# 6 Demo code
 
 This is the base demo code I used in my talks about what is new in C# 6. The demo covers:
-- Indexed Members
-- Auto-properties with initializers (& readonly auto properties)
-- Static Using
+- Index Initialisers
+- Auto-properties with initializers 
+- Read-only auto-properties
+- Static Using Statements
 - Await in catch blocks
 - Exception Filtering
-- Null Propogation 
+- Null Propogation (the nullet operator)
 - NameOf
 - Expression Bodied Members
 - String Interpolation

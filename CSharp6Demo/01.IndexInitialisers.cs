@@ -5,7 +5,7 @@ namespace ConsoleApplication1
 {
     internal static class IndexedMembers
     {
-        private static void CTWO()
+        public static void C_Sharp_Two_Dictionary()
         {
             var config = new Dictionary<int, string>();
             config.Add(1, "hi");
@@ -18,7 +18,7 @@ namespace ConsoleApplication1
             }
         }
 
-        private static void CTHREE()
+        public static void C_Sharp_Three_Dictionary()
         {
             var config = new Dictionary<int, string>
             {

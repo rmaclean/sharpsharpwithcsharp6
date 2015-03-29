@@ -50,7 +50,7 @@
     <Compile Include="03.AsyncExceptions.cs" />
     <Compile Include="05.AutoProperties.cs" />
     <Compile Include="04.ExceptionFilters.cs" />
-    <Compile Include="01.IndexedMembers.cs" />
+    <Compile Include="01.IndexInitialisers.cs" />
     <Compile Include="06.NameOf.cs" />
     <Compile Include="07.NullPropagation.cs" />
     <Compile Include="08.ExpressionBodiedMembers.cs" />

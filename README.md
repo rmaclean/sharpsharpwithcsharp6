@@ -4,7 +4,7 @@ This is the base demo code I used in my talks about what is new in C# 6. The dem
 - [Index Initialisers](http://www.sadev.co.za/content/index-initialisers-c-6)
 - [Auto-properties with initializers](http://www.sadev.co.za/content/auto-properties-initializers-c-6)
 - [Read-only auto-properties](http://www.sadev.co.za/content/read-only-auto-properties-c-6)
-- Static Using Statements
+- [Static Using Statements] (http://www.sadev.co.za/content/static-using-statements-c-6)
 - [Await in catch blocks](http://www.sadev.co.za/content/exceptions-what-happens-when-exception-occurs-inside-catch-or-inside-when-c-6-how-smart)
 - Exception Filtering
 - Null Propogation (the nullet operator)

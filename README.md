@@ -6,7 +6,7 @@ This is the base demo code I used in my talks about what is new in C# 6. The dem
 - [Read-only auto-properties](http://www.sadev.co.za/content/read-only-auto-properties-c-6)
 - [Static Using Statements] (http://www.sadev.co.za/content/static-using-statements-c-6)
 - [Await in catch blocks](http://www.sadev.co.za/content/exceptions-what-happens-when-exception-occurs-inside-catch-or-inside-when-c-6-how-smart)
-- Exception Filtering 
+- [Exception Filtering](http://www.sadev.co.za/content/exception-filtering-c-6)
   - [Additional Details on Exception Filtering](http://www.sadev.co.za/content/exceptions-what-happens-when-exception-occurs-inside-catch-or-inside-when-c-6-how-smart)
 - Null Propogation (the nullet operator)
 - NameOf

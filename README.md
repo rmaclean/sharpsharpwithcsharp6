@@ -8,7 +8,7 @@ This is the base demo code I used in my talks about what is new in C# 6. The dem
 - [Await in catch blocks](http://www.sadev.co.za/content/exceptions-what-happens-when-exception-occurs-inside-catch-or-inside-when-c-6-how-smart)
 - [Exception Filtering](http://www.sadev.co.za/content/exception-filtering-c-6)
   - [Additional Details on Exception Filtering](http://www.sadev.co.za/content/exceptions-what-happens-when-exception-occurs-inside-catch-or-inside-when-c-6-how-smart)
-- Null Propogation (the nullet operator)
+- [Null Propogation (the nullet operator)](http://www.sadev.co.za/content/null-propagation-operator-nullet-c-6)
 - NameOf
 - Expression Bodied Members
 - String Interpolation

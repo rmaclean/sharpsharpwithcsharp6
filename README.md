@@ -11,7 +11,7 @@ This is the base demo code I used in my talks about what is new in C# 6. The dem
 - [Null Propogation (the nullet operator)](http://www.sadev.co.za/content/null-propagation-operator-nullet-c-6)
 - [NameOf](http://www.sadev.co.za/content/nameof-c-6)
 - [Expression Bodied Members](http://www.sadev.co.za/content/expression-bodied-members-c-6)
-- String Interpolation
+- [String Interpolation](http://www.sadev.co.za/content/string-interpolation-c-6)
 
 There are TWO branches, `master` has the clean base for the demos which shows the current way we work with C#. The `Completed_Demos` branch has an example for what it could change to with C# 6.
 
